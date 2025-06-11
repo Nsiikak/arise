@@ -4,14 +4,14 @@ import { Twitter, Linkedin } from "lucide-react";
 const Founder = () => {
   const founders = [
     {
-      name: "[Founder Name 1]",
+      name: "Nsikak-Abasi Ebong",
       title: "Founder, Arise in Tech",
-      image: "/lovable-uploads/d3aa96ba-5e70-44d6-8d79-5125b0bd3498.png",
+      image: "Nsikak.JPEG",
       twitter: "#",
       linkedin: "#"
     },
     {
-      name: "[Founder Name 2]",
+      name: "Ezekiel Ikinwot",
       title: "Co-Founder, Arise in Tech",
       image: null,
       twitter: "#",
