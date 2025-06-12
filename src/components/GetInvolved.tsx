@@ -1,35 +1,32 @@
+
 import { Button } from "@/components/ui/button";
-import { Heart, Users, Briefcase, Gift } from "lucide-react";
+import { Users, Briefcase, Gift } from "lucide-react";
 
 const GetInvolved = () => {
   const sponsorTypes = [
-    {
-      icon: Heart,
-      title: "Community Sponsor",
-      description: "Support local tech education with funding for refreshments and materials",
-      amount: "₦50,000 - ₦200,000",
-      benefits: ["Logo on materials", "Social media recognition", "Community impact"]
-    },
     {
       icon: Users,
       title: "Mentorship Partner", 
       description: "Provide expert mentors and guest speakers for our sessions",
       amount: "Time & Expertise",
-      benefits: ["Direct student impact", "Talent pipeline", "Brand visibility"]
+      benefits: ["Direct student impact", "Talent pipeline", "Brand visibility"],
+      buttonText: "Become a Mentorship Partner"
     },
     {
       icon: Briefcase,
       title: "Corporate Sponsor",
       description: "Major funding partner for program expansion and equipment",
       amount: "₦500,000+",
-      benefits: ["Premier branding", "Student internships", "Long-term partnership"]
+      benefits: ["Premier branding", "Student internships", "Long-term partnership"],
+      buttonText: "Become a Corporate Sponsor"
     },
     {
       icon: Gift,
       title: "In-Kind Sponsor",
       description: "Donate laptops, internet access, or venue space",
       amount: "Equipment/Services",
-      benefits: ["Tax benefits", "Direct contribution", "Community goodwill"]
+      benefits: ["Tax benefits", "Direct contribution", "Community goodwill"],
+      buttonText: "Become an In-Kind Sponsor"
     }
   ];
 
@@ -47,7 +44,7 @@ const GetInvolved = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {sponsorTypes.map((sponsor, index) => (
             <div 
               key={sponsor.title}
@@ -77,8 +74,8 @@ const GetInvolved = () => {
                 </ul>
               </div>
               <div className="p-4 text-center">
-                <Button className="bg-gradient-to-r from-green-600 to-orange-500 text-white px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300">
-                  Become a {sponsor.title.split(' ')[0]}
+                <Button className="bg-gradient-to-r from-green-600 to-orange-500 text-white px-4 py-3 rounded-full hover:shadow-lg transition-all duration-300 text-sm">
+                  {sponsor.buttonText}
                 </Button>
               </div>
             </div>
@@ -104,3 +101,4 @@ const GetInvolved = () => {
 };
 
 export default GetInvolved;
+

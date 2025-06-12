@@ -57,7 +57,7 @@ const Footer = () => {
           <div className="lg:col-span-1 animate-fade-in">
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/f6ecff9c-5d7c-4261-b6c0-a16283ad41d7.png" 
+                src="Arise.PNG" 
                 alt="Arise in Tech Logo" 
                 className="w-16 h-16 mb-4"
               />

@@ -21,7 +21,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/f6ecff9c-5d7c-4261-b6c0-a16283ad41d7.png" 
+              src="Arise.PNG"
               alt="Arise in Tech Logo" 
               className="w-10 h-10"
             />

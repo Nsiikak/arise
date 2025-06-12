@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto animate-fade-in">
           <div className="mb-8">
             <img 
-              src="/lovable-uploads/f6ecff9c-5d7c-4261-b6c0-a16283ad41d7.png" 
+              src="Arise.PNG" 
               alt="Arise in Tech Logo" 
               className="w-24 h-24 mx-auto mb-6 hover-scale"
             />
@@ -36,7 +36,7 @@ const Hero = () => {
           </p>
           
           <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Empowering secondary school students in Akwa Ibom with free tech mentorship, 
+            Empowering YOUTHS in Akwa Ibom with free tech mentorship, 
             hands-on training, and the skills needed to thrive in the global technology landscape.
           </p>
           
