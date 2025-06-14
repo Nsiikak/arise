@@ -17,7 +17,7 @@ const Footer = () => {
     },
     {
       name: "NEEB's Marine and Maritime Consultants",
-      type: "Corporate Sponsor", 
+      type: "Corporate Sponsor",
       status: "active"
     },
     {
@@ -56,9 +56,9 @@ const Footer = () => {
           {/* Logo and Tagline */}
           <div className="lg:col-span-1 animate-fade-in">
             <div className="mb-6">
-              <img 
-                src="Arise.PNG" 
-                alt="Arise in Tech Logo" 
+              <img
+                src="Arise.PNG"
+                alt="Arise in Tech Logo"
                 className="w-16 h-16 mb-4"
               />
               <h3 className="text-2xl font-bold mb-2">Arise in Tech</h3>
@@ -67,21 +67,21 @@ const Footer = () => {
               </p>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Empowering the next generation of tech innovators in Akwa Ibom through 
+              Empowering the next generation of tech innovators in Akwa Ibom through
               mentorship, training, and hands-on learning experiences.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex space-x-4 mt-6">
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="sm"
                 className="border-orange-400 text-orange-300 hover:bg-orange-400 hover:text-gray-900"
               >
                 <Twitter className="w-4 h-4" />
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="sm"
                 className="border-orange-400 text-orange-300 hover:bg-orange-400 hover:text-gray-900"
               >
@@ -96,7 +96,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <a 
+                  <a
                     href={link.href}
                     className="text-gray-300 hover:text-orange-300 transition-colors duration-300 hover:underline"
                   >
@@ -119,7 +119,7 @@ const Footer = () => {
                   <div>
                     <p className="text-sm text-gray-400 mb-1">{contact.label}</p>
                     {contact.href !== "#" ? (
-                      <a 
+                      <a
                         href={contact.href}
                         className="text-gray-300 hover:text-orange-300 transition-colors break-all"
                       >
@@ -140,7 +140,7 @@ const Footer = () => {
             <p className="text-gray-300 mb-4">
               Get the latest updates about our programs and opportunities.
             </p>
-            <Button 
+            <Button
               className="bg-gradient-to-r from-green-600 to-orange-500 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg w-full"
             >
               📧 Subscribe to Updates
@@ -156,43 +156,40 @@ const Footer = () => {
               Working together to build the future of tech in Akwa Ibom
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             {partners.map((partner, index) => (
-              <div 
+              <div
                 key={partner.name}
-                className={`bg-gray-800 rounded-lg p-6 border transition-all duration-300 hover:shadow-xl hover:scale-105 ${
-                  partner.status === 'active' 
-                    ? 'border-green-500 bg-gradient-to-br from-gray-800 to-green-900/20' 
+                className={`bg-gray-800 rounded-lg p-6 border transition-all duration-300 hover:shadow-xl hover:scale-105 ${partner.status === 'active'
+                    ? 'border-green-500 bg-gradient-to-br from-gray-800 to-green-900/20'
                     : 'border-gray-600 border-dashed'
-                }`}
+                  }`}
               >
                 <div className="text-center">
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${
-                    partner.status === 'active' 
-                      ? 'bg-gradient-to-br from-green-500 to-orange-500' 
+                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${partner.status === 'active'
+                      ? 'bg-gradient-to-br from-green-500 to-orange-500'
                       : 'bg-gray-600'
-                  }`}>
+                    }`}>
                     <span className="text-2xl">
                       {partner.status === 'active' ? '🤝' : '📝'}
                     </span>
                   </div>
                   <h5 className="text-lg font-semibold text-white mb-2">{partner.name}</h5>
                   <p className="text-sm text-gray-400 mb-3">{partner.type}</p>
-                  <div className={`inline-flex px-3 py-1 rounded-full text-xs font-medium ${
-                    partner.status === 'active' 
-                      ? 'bg-green-500/20 text-green-300' 
+                  <div className={`inline-flex px-3 py-1 rounded-full text-xs font-medium ${partner.status === 'active'
+                      ? 'bg-green-500/20 text-green-300'
                       : 'bg-orange-500/20 text-orange-300'
-                  }`}>
+                    }`}>
                     {partner.status === 'active' ? 'Active Partner' : 'Open for Partnership'}
                   </div>
                 </div>
               </div>
             ))}
           </div>
-          
+
           <div className="text-center">
-            <Button 
+            <Button
               variant="outline"
               className="border-orange-400 text-orange-300 hover:bg-orange-400 hover:text-gray-900 px-8 py-3 rounded-full font-semibold transition-all duration-300"
             >
@@ -204,9 +201,9 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 text-center animate-fade-in" style={{ animationDelay: '1000ms' }}>
           <p className="text-gray-400">
-            © 2024 Arise in Tech - Akwa Ibom. All rights reserved. 
+            © 2025 Arise in Tech - Akwa Ibom. All rights reserved.
             <span className="mx-2">|</span>
-            Built with ❤️ for the future of tech in Nigeria
+            Built with ❤️ for the future of tech in Akwa Ibom, Nigeria.
           </p>
         </div>
       </div>
