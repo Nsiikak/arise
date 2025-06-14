@@ -31,8 +31,8 @@ const Footer = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+234 XXX XXX XXXX",
-      href: "tel:+234XXXXXXXXX"
+      value: "+234 802 583 9156",
+      href: "tel:+2348025839156"
     },
     {
       icon: Mail,
@@ -162,14 +162,14 @@ const Footer = () => {
               <div
                 key={partner.name}
                 className={`bg-gray-800 rounded-lg p-6 border transition-all duration-300 hover:shadow-xl hover:scale-105 ${partner.status === 'active'
-                    ? 'border-green-500 bg-gradient-to-br from-gray-800 to-green-900/20'
-                    : 'border-gray-600 border-dashed'
+                  ? 'border-green-500 bg-gradient-to-br from-gray-800 to-green-900/20'
+                  : 'border-gray-600 border-dashed'
                   }`}
               >
                 <div className="text-center">
                   <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${partner.status === 'active'
-                      ? 'bg-gradient-to-br from-green-500 to-orange-500'
-                      : 'bg-gray-600'
+                    ? 'bg-gradient-to-br from-green-500 to-orange-500'
+                    : 'bg-gray-600'
                     }`}>
                     <span className="text-2xl">
                       {partner.status === 'active' ? '🤝' : '📝'}
@@ -178,8 +178,8 @@ const Footer = () => {
                   <h5 className="text-lg font-semibold text-white mb-2">{partner.name}</h5>
                   <p className="text-sm text-gray-400 mb-3">{partner.type}</p>
                   <div className={`inline-flex px-3 py-1 rounded-full text-xs font-medium ${partner.status === 'active'
-                      ? 'bg-green-500/20 text-green-300'
-                      : 'bg-orange-500/20 text-orange-300'
+                    ? 'bg-green-500/20 text-green-300'
+                    : 'bg-orange-500/20 text-orange-300'
                     }`}>
                     {partner.status === 'active' ? 'Active Partner' : 'Open for Partnership'}
                   </div>
