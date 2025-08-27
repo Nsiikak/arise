@@ -8,7 +8,7 @@ const Donations = () => {
       type: "Bank Transfer",
       icon: Building,
       details: {
-        bankName: "First Bank of Nigeria",
+        bankName: "FirstBank of Nigeria",
         accountName: "Arise in Tech Foundation",
         accountNumber: "3087654321",
         sortCode: "011152356"
