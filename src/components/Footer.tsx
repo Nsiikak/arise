@@ -11,14 +11,16 @@ const Footer = () => {
 
   const partners = [
     {
-      name: "Ibom Tech Park",
+      name: "ACAD AI",
       type: "Technology Partner",
-      status: "active"
+      status: "active",
+      logo: "Acad AI 3.png"
     },
     {
       name: "NEEB's Marine and Maritime Consultants",
       type: "Corporate Sponsor",
-      status: "active"
+      status: "active",
+      logo: ""
     },
     {
       name: "Future Sponsors",
@@ -167,13 +169,24 @@ const Footer = () => {
                   }`}
               >
                 <div className="text-center">
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${partner.status === 'active'
-                    ? 'bg-gradient-to-br from-green-500 to-orange-500'
-                    : 'bg-gray-600'
-                    }`}>
-                    <span className="text-2xl">
-                      {partner.status === 'active' ? '🤝' : '📝'}
-                    </span>
+                  <div
+                    className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center 
+                      ${partner.status === "active"
+                        ? "bg-gradient-to-br from-green-500 to-orange-500"
+                        : "bg-gray-600"
+                      }`}
+                  >
+                    {partner.logo ? (
+                      <img
+                        src={partner.logo}
+                        alt={`${partner.name} logo`}
+                        className="w-14 h-14 object-contain"
+                      />
+                    ) : (
+                      <span className="text-2xl">
+                        {partner.status === "active" ? "🤝" : "📝"}
+                      </span>
+                    )}
                   </div>
                   <h5 className="text-lg font-semibold text-white mb-2">{partner.name}</h5>
                   <p className="text-sm text-gray-400 mb-3">{partner.type}</p>
