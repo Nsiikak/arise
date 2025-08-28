@@ -6,7 +6,7 @@ const GetInvolved = () => {
   const sponsorTypes = [
     {
       icon: Users,
-      title: "Mentorship Partner", 
+      title: "Mentorship Partner",
       description: "Provide expert mentors and guest speakers for our sessions",
       amount: "Time & Expertise",
       benefits: ["Direct student impact", "Talent pipeline", "Brand visibility"],
@@ -16,7 +16,7 @@ const GetInvolved = () => {
       icon: Briefcase,
       title: "Corporate Sponsor",
       description: "Major funding partner for program expansion and equipment",
-      amount: "₦500,000+",
+      amount: "Cash Donations",
       benefits: ["Premier branding", "Student internships", "Long-term partnership"],
       buttonText: "Become a Corporate Sponsor"
     },
@@ -38,15 +38,15 @@ const GetInvolved = () => {
             Get Involved
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Support our mission to empower Akwa Ibom's youth through tech education. 
-            Your contribution helps us provide free mentorship, resources, and opportunities 
+            Support our mission to empower Akwa Ibom's youth through tech education.
+            Your contribution helps us provide free mentorship, resources, and opportunities
             for students to excel in the digital age.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {sponsorTypes.map((sponsor, index) => (
-            <div 
+            <div
               key={sponsor.title}
               className="bg-white rounded-lg shadow-md overflow-hidden animate-fade-in hover-scale"
               style={{ animationDelay: `${index * 150}ms` }}
@@ -87,8 +87,8 @@ const GetInvolved = () => {
             Ready to make a difference?
           </h3>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-            Join us in empowering the next generation of tech leaders in Akwa Ibom. 
-            Whether you're an individual, a company, or an organization, there's a place for you 
+            Join us in empowering the next generation of tech leaders in Akwa Ibom.
+            Whether you're an individual, a company, or an organization, there's a place for you
             in our mission.
           </p>
           <Button size="lg" className="bg-gradient-to-r from-green-600 to-orange-500 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 hover-scale">

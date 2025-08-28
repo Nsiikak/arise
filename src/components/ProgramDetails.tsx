@@ -5,7 +5,7 @@ const ProgramDetails = () => {
     {
       icon: Calendar,
       label: "Duration",
-      value: "3 Weeks",
+      value: "2 months",
       detail: "Intensive learning experience"
     },
     {
@@ -23,7 +23,7 @@ const ProgramDetails = () => {
     {
       icon: MapPin,
       label: "Dates",
-      value: "June 14, 21, 28",
+      value: "To be decided",
       detail: "Mark your calendars!"
     }
   ];
@@ -36,7 +36,7 @@ const ProgramDetails = () => {
 
   const getItems = [
     "Hands-on coding experience",
-    "Career path exploration", 
+    "Career path exploration",
     "Tech entrepreneurship insights",
     "Industry mentorship",
     "Real-world project exposure",
