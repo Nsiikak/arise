@@ -13,8 +13,8 @@ const Founder = () => {
     {
       name: "Ezekiel Ikinwot",
       title: "Co-Founder, Arise in Tech",
-      image: null,
-      twitter: "#",
+      image: "ZEEKS.JPG",
+      twitter: "https://x.com/Zeeks_dev",
       linkedin: "https://www.linkedin.com/in/ikinwotezekiel/"
     }
   ];
