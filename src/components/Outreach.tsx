@@ -10,7 +10,7 @@ const Outreach = () => {
     },
     {
       name: "Holy Child Secondary School",
-      status: "Visited", 
+      status: "Visited",
       students: 38,
       feedback: "The interactive sessions got everyone excited about coding."
     },
@@ -38,8 +38,8 @@ const Outreach = () => {
   const testimonials = [
     {
       text: "This program opened my eyes to the possibilities in technology. I never knew coding could be this exciting!",
-      student: "Blessing A.",
-      school: "Government Secondary School, Uyo"
+      student: "Goodnews Eton",
+      school: "Univeristy of Uyo"
     },
     {
       text: "The mentors were amazing and made complex concepts easy to understand. Now I want to study Computer Science!",
@@ -56,8 +56,8 @@ const Outreach = () => {
             School Outreach Program
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Inspired by a founder who grew up with limited tech access, this initiative 
-            aims to ensure every young person in Akwa Ibom has the opportunity to explore 
+            Inspired by a founder who grew up with limited tech access, this initiative
+            aims to ensure every young person in Akwa Ibom has the opportunity to explore
             and excel in technology.
           </p>
         </div>
@@ -65,7 +65,7 @@ const Outreach = () => {
         {/* Stats Section */}
         <div className="grid md:grid-cols-3 gap-8 mb-16 max-w-4xl mx-auto">
           {stats.map((stat, index) => (
-            <div 
+            <div
               key={stat.label}
               className="bg-white rounded-2xl p-8 text-center shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in"
               style={{ animationDelay: `${index * 200}ms` }}
@@ -80,7 +80,7 @@ const Outreach = () => {
         {/* Testimonials */}
         <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${(index + 3) * 200}ms` }}

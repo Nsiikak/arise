@@ -30,15 +30,15 @@ const About = () => {
             About Arise in Tech
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            A free mentorship and training program for secondary school students in Akwa Ibom 
-            interested in technology. We focus on software engineering, machine learning, and 
+            A free mentorship and training program for YOUTHS in Akwa Ibom
+            interested in technology. We focus on software engineering, machine learning, AI and
             preparing the next generation of tech innovators.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={feature.title}
               className="group text-center animate-fade-in hover-scale"
               style={{ animationDelay: `${index * 200}ms` }}
