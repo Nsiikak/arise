@@ -15,7 +15,7 @@ const Founder = () => {
       title: "Co-Founder, Arise in Tech",
       image: null,
       twitter: "#",
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/ikinwotezekiel/"
     }
   ];
 
