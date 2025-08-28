@@ -8,7 +8,7 @@ const Founder = () => {
       title: "Founder, Arise in Tech",
       image: "Nsikak.JPEG",
       twitter: "https://x.com/Nsitheenigma_",
-      linkedin: "https://www.linkedin.com/in/nsikak-abasi-ebong-78a0b1264/"
+      linkedin: "https://www.linkedin.com/in/nsikak-abasi-ebong98"
     },
     {
       name: "Ezekiel Ikinwot",
@@ -33,7 +33,7 @@ const Founder = () => {
 
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {founders.map((founder, index) => (
-            <div 
+            <div
               key={founder.name}
               className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in"
               style={{ animationDelay: `${index * 300}ms` }}
@@ -41,8 +41,8 @@ const Founder = () => {
               <div className="text-center">
                 <div className="relative mb-6">
                   {founder.image ? (
-                    <img 
-                      src={founder.image} 
+                    <img
+                      src={founder.image}
                       alt={founder.name}
                       className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg"
                     />
@@ -70,34 +70,34 @@ const Founder = () => {
                 </div>
 
                 <div className="flex justify-center gap-4 mt-6">
-                  <a 
-  href={founder.twitter}  
-  className="rounded-full p-3 border border-blue-400 text-blue-600 hover:bg-blue-400 hover:text-white transition-all duration-300" 
-  target="_blank" 
-  rel="noopener noreferrer"
->
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    width="15" 
-    height="11" 
-    viewBox="0 0 1200 1227" 
-    fill="currentColor"
-  >
-    <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" />
-  </svg>
-</a>
-<a
-  href={founder.linkedin}
-  target="_blank"
-  rel="noopener noreferrer"
->
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="rounded-full p-3 border-blue-600 text-blue-800 hover:bg-blue-600 hover:text-white transition-all duration-300"
+                  <a
+                    href={founder.twitter}
+                    className="rounded-full p-3 border border-blue-400 text-blue-600 hover:bg-blue-400 hover:text-white transition-all duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Linkedin className="w-4 h-4" />
-                  </Button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="11"
+                      viewBox="0 0 1200 1227"
+                      fill="currentColor"
+                    >
+                      <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" />
+                    </svg>
+                  </a>
+                  <a
+                    href={founder.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="rounded-full p-3 border-blue-600 text-blue-800 hover:bg-blue-600 hover:text-white transition-all duration-300"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                    </Button>
                   </a>
                 </div>
               </div>
