@@ -80,7 +80,7 @@ const Hero = () => {
         <Star className="w-12 h-12 text-yellow-500" />
       </div>
       <div className="absolute top-20 right-10 animate-bounce" style={{ animationDelay: '2s' }}>
-        <Laptop className="w-12 h-12 text-blue-500" />
+        <Laptop className="w-12 h-12 text-green-500" />
       </div>
       {/* <div className="absolute bottom-32 left-20 text-3xl animate-bounce" style={{ animationDelay: '3s' }}>
         🚀
